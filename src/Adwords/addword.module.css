@@ -1,0 +1,5 @@
+.selected {
+  background-color: #cce5ff; /* Change to your desired background color */
+  color: #007bff; /* Change to your desired text color */
+  /* Add any other styles you want for the selected state */
+}

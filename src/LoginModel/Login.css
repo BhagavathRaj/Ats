@@ -1,0 +1,27 @@
+.items {
+  display: flex;
+  justify-content: space-between;
+  left: 10px;
+  position: relative;
+  width: 250px;
+  min-width: 150px;
+  justify-content: left;
+  align-items: center;
+  padding: 3px 10px;
+  line-height: normal;
+  height: 30px;
+}
+.items p:hover {
+  color: #34a853;
+  cursor: pointer;
+}
+.items p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.items svg {
+  height: 18px;
+  width: 31px;
+  line-height: 31px;
+  color: #777d74;
+}

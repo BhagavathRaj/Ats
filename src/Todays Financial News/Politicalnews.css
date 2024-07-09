@@ -1,0 +1,64 @@
+.politicalnewscontainer {
+  max-height: 190px;
+  overflow-y: scroll;
+  display: block;
+  overflow-x: hidden;
+  margin-top: 10px;
+}
+.shadowbox {
+  padding: 5px;
+  margin-top: 5px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  justify-content: space-between;
+  display: flex;
+  border-radius: 0.25px;
+  box-sizing: border-box;
+}
+.companyName {
+  font-size: 12px;
+  color: #0e0e0e;
+  margin-bottom: 5px;
+}
+.newsHeading {
+  font-size: 14px;
+  color: #0e0e0e;
+  cursor: pointer;
+}
+.rounded {
+  border-radius: 5px !important;
+  max-height: 120px !important;
+  min-height: 120px;
+  max-width: 210px;
+  min-width: 210px;
+}
+@media (max-width: 600px) {
+  .rounded {
+    display: none;
+  }
+}
+.paragrey {
+  color: #707070;
+  font-style: normal;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-top: 0px;
+}
+.calender-box {
+  width: 45px;
+  height: 45px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.5px;
+  background-color: #e5f2ff !important;
+  color: #0084ff !important;
+  padding: 0.25px;
+  border-radius: 50px;
+}
+.paradark {
+  font-size: 14px;
+  cursor: pointer;
+  color: #374948 !important;
+  margin-bottom: 0px;
+}

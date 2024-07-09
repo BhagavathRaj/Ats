@@ -1,0 +1,275 @@
+/* App.css or Politicalnews.css */
+.news-item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.news-details {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  min-width: 250px;
+  width: 40%;
+}
+
+.news-image {
+  width: 50px;
+  height: 50px;
+  padding: 3px;
+  border: 1px solid #eeeeee;
+  border-radius: 6px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.news-title {
+  font-size: 0.75rem;
+  color: #3c4043;
+  font-weight: 600;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+
+.news-status {
+  font-size: 12px;
+  color: #34a853;
+  margin-top: 0px;
+}
+
+.news-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  height: 20px;
+  width: 10%;
+}
+
+.buy-button {
+  padding: 0 12px;
+  background-color: #d1ffdd;
+  color: #34a853;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.news-price {
+  text-align: right;
+  min-width: 150px;
+  width: 30%;
+}
+
+.cmp {
+  margin-bottom: 0px;
+  font-size: 0.783rem;
+  font-weight: 600;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  color: #777d74;
+  align-items: center;
+}
+
+.cmp span {
+  font-size: 0.785rem;
+  font-weight: 600;
+}
+
+.price-change {
+  justify-content: start;
+  display: flex;
+}
+
+.price-down {
+  color: #dc3545;
+  font-size: 14px;
+}
+
+.percent-down {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 0px;
+}
+
+.arrow-icon {
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive CSS */
+@media only screen and (max-width: 600px) {
+  .news-content {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 8px;
+  }
+
+  .news-details,
+  .news-action,
+  .news-price {
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  .news-price {
+    margin-top: 10px;
+  }
+
+  .buy-button {
+    justify-content: flex-start;
+  }
+
+  .cmp {
+    justify-content: flex-start;
+  }
+
+  .arrow-icon {
+    justify-content: flex-start;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.content-img {
+  display: flex;
+  justify-content: start;
+  min-width: 250px;
+  width: 50%;
+  align-items: center;
+}
+.imge {
+  width: 50px;
+  height: 50px;
+  padding: 3px;
+  border: 1px solid #eeeeee;
+  border-radius: 6px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nifty {
+  font-size: 0.75rem;
+  color: #3c4043;
+  font-weight: 600;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+.opencls {
+  font-size: 12px;
+  color: #34a853;
+  margin-top: 0px;
+}
+.butn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  height: 20px;
+  width: 10%;
+}
+.cmp {
+  text-align: right;
+  min-width: 150px;
+  width: 30%;
+}
+.numberspan {
+  color: #dc3545;
+  font-size: 12px;
+  margin: 0px;
+}
+.icn {
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 400px) {
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .content-img {
+    display: flex;
+    justify-content: start;
+    min-width: 100px;
+    align-items: center;
+  }
+  .imge {
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    border: 1px solid #eeeeee;
+    border-radius: 0px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nifty {
+    font-size: 10px;
+  }
+  .opencls {
+    font-size: 13px;
+    display: inline-block;
+  }
+  .butn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    height: 20px;
+    width: 10%;
+    position: relative;
+    right: 30px;
+    top: 10px;
+  }
+  .cmp {
+    min-width: 0px;
+    position: relative;
+    right: 45px;
+    top: -10px;
+  }
+  .numberspan {
+    color: #dc3545;
+    font-size: 11px;
+    margin: 0px;
+    position: relative;
+    top: 15px;
+    right: 50px;
+  }
+  .icn {
+    position: relative;
+    bottom: 20px;
+    left: 60px;
+  }
+  .rednumber {
+    position: relative;
+    top: 13px;
+    right: 20px;
+  }
+}

@@ -1,0 +1,27 @@
+$Footer_height: 40px;
+
+.AddHeader{
+    position: sticky;
+    align-items: center;
+    display: flex;
+   
+}
+
+.AddBody{
+height: 73vh;
+overflow: hidden;
+border-bottom: 1px solid #E6E6E6;
+}
+
+.AddFooterWrapper{
+    padding:20px 50px 30px 20px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    .AddFooter{
+        display: flex;
+        height: $Footer_height ;
+        justify-content: end;
+    }
+}
