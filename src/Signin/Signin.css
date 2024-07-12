@@ -75,3 +75,8 @@ h6 {
     padding: 0px;
   }
 }
+@media (max-width: 768px) {
+  .card {
+    min-width: 100%;
+  }
+}

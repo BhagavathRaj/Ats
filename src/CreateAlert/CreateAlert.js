@@ -18,35 +18,36 @@ const CreateAlert = () => {
           margin: '0px',
         }}
       >
+        <Button
+          sx={{
+            color: '#34a853!important',
+            backgroundColor: '#d1ffdd!important',
+            // color:
+            //   selectedComponent === component
+            //     ? '#ffffff!important'
+            //     : '#34a853!important',
+            // backgroundColor:
+            //   selectedComponent === component
+            //     ? '#34a853!important'
+            //     : '#d1ffdd!important',
+            borderRadius: '50px',
+            border: '1px solid #e5f2ff!important',
+            paddingTop: '2px',
+            paddingLeft: '8px',
+            paddingRight: '8px',
+            paddingBottom: '2px',
+            fontSize: '11px',
+            fontWeight: 600,
+            marginBottom: '10px',
+            marginLeft: '15px',
+            textTransform: 'none',
+            top: '100px',
+            left: '50px !important',
+          }}
+        >
+          Stocks
+        </Button>
         <div className="content-page">
-          <Button
-            sx={{
-              color: '#34a853!important',
-              backgroundColor: '#d1ffdd!important',
-              // color:
-              //   selectedComponent === component
-              //     ? '#ffffff!important'
-              //     : '#34a853!important',
-              // backgroundColor:
-              //   selectedComponent === component
-              //     ? '#34a853!important'
-              //     : '#d1ffdd!important',
-              borderRadius: '50px',
-              border: '1px solid #e5f2ff!important',
-              paddingTop: '2px',
-              paddingLeft: '8px',
-              paddingRight: '8px',
-              paddingBottom: '2px',
-              fontSize: '11px',
-              fontWeight: 600,
-              marginBottom: '10px',
-              marginLeft: '15px',
-              textTransform: 'none',
-              left: '50px !important',
-            }}
-          >
-            Stocks
-          </Button>
           <div className="container">
             <div className="rows">
               <div className="p-content">

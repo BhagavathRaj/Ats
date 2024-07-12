@@ -17,6 +17,10 @@ import HomePage from './Home/HomePage';
 import CreatePortFolio from './CreatePortfolio/CreatePortFolio';
 import Signin from './Signin/Signin';
 import AccountOpen from './Account/AccountOpen';
+import ElementCalculator from './Calculator/ElementCalculator';
+import PremiumCalculator from './Calculator/PremiumCalculator';
+import BrokerageCalculator from './Calculator/BrokerageCalculator';
+import Charges from './Charges/Charges';
 function App() {
   return (
     <>
@@ -44,6 +48,13 @@ function App() {
         <Route path="/create_portfolio" element={<CreatePortFolio />} />
         <Route path="/sign-in/*" element={<Signin />} />
         <Route path="/account-opening/*" element={<AccountOpen />} />
+        <Route path="/margin-calculator/*" element={<ElementCalculator />} />
+        <Route path="/premium-calculator/*" element={<PremiumCalculator />} />
+        <Route
+          path="/brokerage_calculator/"
+          element={<BrokerageCalculator />}
+        />
+        <Route path="/charges/*" element={<Charges />} />
       </Routes>
     </>
   );

@@ -27,6 +27,17 @@ export default function Logindropdown({ anchorEl, handleClose }) {
   const handleAccount = () => {
     navigate('/account-opening/');
   };
+  const handleCalculator = (e) => {
+    console.log(e.target.value);
+    // navigate(' /margin-calculator/')
+  };
+  const handleClick = (label) => {
+    if (label === 'Calculator') {
+      navigate('/margin-calculator/');
+    } else if (label === 'Pricing') {
+      navigate('/charges/');
+    }
+  };
   const signNavigate = () => {
     navigate('/sign-in/');
   };
@@ -110,6 +121,7 @@ export default function Logindropdown({ anchorEl, handleClose }) {
               <div
                 className="items"
                 key={item.label}
+                onClick={() => handleClick(item.label)}
                 style={{ fontSize: isSmallScreen ? '12px' : '14px' }}
               >
                 {item.icon} <p className="hover-para">{item.label}</p>

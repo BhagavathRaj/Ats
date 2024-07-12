@@ -1,0 +1,121 @@
+.charge-row {
+  display: flex;
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+  top: 70px;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.charge-title {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.grid-Charge1 {
+  margin-top: 80px;
+  text-align: center;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.price {
+  font-family: 'popppins';
+  font-size: 12px;
+  color: #282828;
+}
+
+.fo-26 {
+  font-family: 'Roboto', sans-serif !important;
+  color: #ff931e;
+  font-size: 30px;
+}
+.fo-30 {
+  font-family: 'Roboto', sans-serif !important;
+  color: #ff931e;
+  font-size: 60px;
+}
+.price-head {
+  height: 30px;
+}
+/* .price-text{
+
+} */
+.fullCharge {
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.charge-list {
+  margin-top: 15px;
+  padding: 20px 25px;
+  border-radius: 10px;
+  background-color: #fbfbfb;
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.15) !important;
+}
+.text-center {
+  text-align: center;
+}
+.charger-nav {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  list-style: none;
+}
+.charger-nav-li {
+  margin-bottom: 5px;
+}
+.chargeTableresponsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+.table-borderless {
+  width: 100%;
+  margin-bottom: 16px;
+  color: #212529;
+  border-right: 0px;
+  border-collapse: collapse;
+  padding: 4px 0px;
+  border: none;
+}
+.table-borderless thead th {
+  font-weight: 400;
+  color: #707070;
+}
+.text-left {
+  text-align: left;
+}
+
+.table-borderless tbody td {
+  font-weight: 500;
+  color: #3c4043;
+  font-size: 13px;
+}
+.table-borderless td {
+  padding: 8px;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+.othercharges-list {
+  padding-left: 45px;
+  margin-top: 15px;
+}
+.othercharges-list li p {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .grid-Charge1 {
+    flex-direction: column;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
