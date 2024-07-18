@@ -19,25 +19,37 @@ import EmailIcon from '@mui/icons-material/Email';
 import CommentIcon from '@mui/icons-material/Comment';
 import { useNavigate } from 'react-router-dom';
 
+const actions = {
+  Calculator: '/margin-calculator/',
+  Pricing: '/charges/',
+  Trade: 'https://trading.adityatrading.in/#!/app',
+  IPO: 'https://ipo.adityatrading.in/',
+  'Refer and Earn': 'https://referral.adityatrading.in/',
+  'FAQ’s': 'https://support.adityatrading.in/',
+  'Create Ticket': '/createTicket/',
+};
+
 export default function Logindropdown({ anchorEl, handleClose }) {
   const open = Boolean(anchorEl);
   const theme = useTheme();
   const navigate = useNavigate();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+
   const handleAccount = () => {
     navigate('/account-opening/');
   };
-  const handleCalculator = (e) => {
-    console.log(e.target.value);
-    // navigate(' /margin-calculator/')
-  };
+
   const handleClick = (label) => {
-    if (label === 'Calculator') {
-      navigate('/margin-calculator/');
-    } else if (label === 'Pricing') {
-      navigate('/charges/');
+    const action = actions[label];
+    if (action) {
+      if (action.startsWith('http')) {
+        window.location.href = action;
+      } else {
+        navigate(action);
+      }
     }
   };
+
   const signNavigate = () => {
     navigate('/sign-in/');
   };
@@ -151,30 +163,38 @@ export default function Logindropdown({ anchorEl, handleClose }) {
                 marginTop: '7px',
               }}
             >
-              <WhatsAppIcon
-                sx={{
-                  color: '#34a853',
-                  fontSize: isSmallScreen ? '18px' : '24px',
-                }}
-              />
-              <PhoneIcon
-                sx={{
-                  color: '#17a2b853',
-                  fontSize: isSmallScreen ? '18px' : '24px',
-                }}
-              />
-              <TelegramIcon
-                sx={{
-                  color: '#007bff',
-                  fontSize: isSmallScreen ? '18px' : '24px',
-                }}
-              />
-              <EmailIcon
-                sx={{
-                  color: '#dc3545',
-                  fontSize: isSmallScreen ? '18px' : '24px',
-                }}
-              />
+              <a href="https://wa.me/+917667273344">
+                <WhatsAppIcon
+                  sx={{
+                    color: '#34a853',
+                    fontSize: isSmallScreen ? '18px' : '24px',
+                  }}
+                />
+              </a>
+              <a href="tel:+917667273344">
+                <PhoneIcon
+                  sx={{
+                    color: '#17a2b853',
+                    fontSize: isSmallScreen ? '18px' : '24px',
+                  }}
+                />
+              </a>
+              <a href="https://t.me/atssharemarket">
+                <TelegramIcon
+                  sx={{
+                    color: '#007bff',
+                    fontSize: isSmallScreen ? '18px' : '24px',
+                  }}
+                />
+              </a>
+              <a href="mailto:support@adityatrading.com">
+                <EmailIcon
+                  sx={{
+                    color: '#dc3545',
+                    fontSize: isSmallScreen ? '18px' : '24px',
+                  }}
+                />
+              </a>
             </div>
           </div>
           <Divider />
@@ -183,9 +203,14 @@ export default function Logindropdown({ anchorEl, handleClose }) {
             style={{ fontSize: isSmallScreen ? '12px' : '14px' }}
           >
             <CommentIcon />{' '}
-            <p style={{ width: '250px' }} className="hover-para">
-              Send Feedback
-            </p>
+            <a
+              style={{ textDecoration: 'none' }}
+              href="mailto:support@adityatrading.com"
+            >
+              <p style={{ width: '250px' }} className="hover-para">
+                Send Feedback
+              </p>
+            </a>
           </div>
         </MenuList>
       </Menu>

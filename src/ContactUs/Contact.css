@@ -1,0 +1,97 @@
+.table-responsive {
+  display: block;
+  min-width: 200px;
+  overflow-x: auto;
+  height: auto;
+  overflow-y: hidden;
+  margin-bottom: 30px;
+}
+.tables {
+  width: 100%;
+  color: #212529;
+  height: fit-content;
+}
+#blank {
+  border: 1px solid #b7b1b1;
+  line-height: 1.2;
+  padding: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+.bankTable {
+  border: 1px solid #b7b1b1;
+  line-height: 1.2;
+  width: 100%;
+  color: #fff;
+  padding: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+.bankTable td {
+  border: 1px solid #b7b1b1;
+  padding: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+.bankTable tbody td {
+  color: #3c4043;
+  font-weight: 500;
+}
+.table-responsive thead {
+  border: 1px solid #b7b1b1;
+  line-height: 1.2;
+  padding: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+.bankTable thead {
+  padding: 8px;
+}
+.pgrey {
+  color: #666;
+  font-size: 12px;
+  position: relative;
+  top: 70px;
+}
+.pgrey a {
+  color: #34a853;
+  text-decoration: none;
+  background-color: transparent;
+}
+.icl {
+  margin-left: 35px;
+  top: 70px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .bankTable {
+    max-width: 100%;
+    margin-bottom: 15px;
+    display: block;
+    overflow-x: auto;
+  }
+  .tables {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .table-responsive {
+    width: 280px;
+    overflow-x: auto;
+
+    margin-bottom: 50px;
+  }
+
+  .tables {
+    min-width: 600px; /* Ensure the table has a minimum width to trigger scrolling */
+  }
+}
+
+.footer-content {
+  width: 100%;
+  text-align: center;
+}

@@ -8,8 +8,13 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import CallIcon from '@mui/icons-material/Call';
 import './Footer.css';
+import { useNavigate } from 'react-router';
 
 const FooterContent = () => {
+  const navigate = useNavigate();
+  const handleNavigation = (path) => {
+    navigate(path);
+  };
   return (
     <div
       style={{
@@ -32,25 +37,61 @@ const FooterContent = () => {
                   <li>
                     <h4 className="footer-title">About Us</h4>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() =>
+                      window.open(
+                        'https://adityatrading.in/media/KMP/Key-Managerial-Personnel-ATS.pdf',
+                        '_blank'
+                      )
+                    }
+                  >
                     <p>Key Managerial Personnel</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/investment-philosophy/')}
+                  >
                     <p>Investment Philosophy</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/bank-account-details/')}
+                  >
+                    <p>Registered Bank Details</p>
+                  </li>
+                  <li
+                    className="hover-para"
+                    onClick={() => {
+                      window.open('https://adityatrading.greythr.com/login.do');
+                    }}
+                  >
                     <p>Greytip</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => {
+                      window.open('https://neuron.adityatrading.in/');
+                    }}
+                  >
                     <p>Neuron</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/careers/')}
+                  >
                     <p>Careers</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/branches/')}
+                  >
                     <p>Branches</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/contactus/')}
+                  >
                     <p>Contact us</p>
                   </li>
                   <li>
@@ -82,25 +123,46 @@ const FooterContent = () => {
                   <li>
                     <h4 className="footer-title">Research</h4>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/')}
+                  >
                     <p>Campaign Login</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/')}
+                  >
                     <p>Knowledge Center</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/share-market-news/')}
+                  >
                     <p>Daily Morning Reports</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/')}
+                  >
                     <p>Company Reports</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/')}
+                  >
                     <p>Sector Reports</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/')}
+                  >
                     <p>Commodity Reports</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/')}
+                  >
                     <p>IPO Reports</p>
                   </li>
                   <li>
@@ -132,37 +194,81 @@ const FooterContent = () => {
                   <li>
                     <h4 className="footer-title">Investor Corner</h4>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() =>
+                      window.open('http://pg.adityatrading.com/WebClient/')
+                    }
+                  >
                     <p>Back Office Login</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() =>
+                      handleNavigation('/account-opening-process/')
+                    }
+                  >
                     <p>Account Opening Process</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/investment-grievance/')}
+                  >
                     <p>Investors Grievance</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() =>
+                      window.open('https://adityatrading.in/static/download/')
+                    }
+                  >
                     <p>XTS Terminal Download</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/form-center-resources/')}
+                  >
                     <p>Form Center/ Resources</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/kyc-checklist/')}
+                  >
                     <p>KYC Checklist</p>
                   </li>
                   <li className="hover-para">
                     <p>Rights and Obligations</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() =>
+                      window.open(
+                        'https://adityatrading.in/media/riskdisclosure/Risk-Disclosure-Document-ATS.pdf'
+                      )
+                    }
+                  >
                     <p>Risk Disclosure Document</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/ats-policy/')}
+                  >
                     <p>ATS Policy</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() =>
+                      window.open(
+                        'https://adityatrading.in/media/authorized-persons-details/ATS-AP.pdf'
+                      )
+                    }
+                  >
                     <p>Authorized Persons Details</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/how-to-file-complaint/')}
+                  >
                     <p>How to file a complaint</p>
                   </li>
                 </ul>

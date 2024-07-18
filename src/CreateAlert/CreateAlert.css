@@ -8,7 +8,7 @@
   display: flex;
   position: relative;
   justify-content: center;
-
+  height: auto;
   min-height: 100vh;
   font-size: 14px;
   font-style: normal;
@@ -24,8 +24,8 @@
 .rows {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .content-page button {
   position: relative;
@@ -115,7 +115,119 @@
   border-right: 0;
   border-bottom: 1px dotted #607d8b;
 }
-@media (max-width: 700px) {
+.rowsmb {
+  margin-bottom: 25px;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.lgContact {
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.contactsupportbox {
+  padding: 28px;
+  background: #fafafb;
+  border-radius: 3px;
+}
+.contactsupportbox p {
+  margin-top: 0;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.contactsupportbox h4 {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 22px;
+}
+.succesbtn {
+  font-family: popins sans-serif;
+  font-size: 13px;
+  background-color: #34a853;
+  border-color: #34a853;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+  font-weight: 400;
+  color: #fff;
+}
+.text-gry {
+  color: #666;
+}
+.btm5 {
+  margin-bottom: 5px;
+}
+.phonelink {
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+.smal25 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.hfContact {
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-bottom: 12px;
+}
+.contact-bengaluru {
+  max-height: 24px;
+}
+.contact-blg-txt {
+  font-size: 30px;
+}
+.lg3 {
+  margin-bottom: 16px;
+
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+.mt1 {
+  margin-top: 25px;
+}
+.mgimg {
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .smal25 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lg3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mgimg {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hfContact {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .search {
     width: 100%;
   }
@@ -148,6 +260,9 @@
   .content-page {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .container {
+    top: 70px;
   }
 }
 

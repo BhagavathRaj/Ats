@@ -64,3 +64,18 @@ h6 {
   margin: 0px;
   line-height: 1.5;
 }
+h4 {
+  font-family: -apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu,
+    sans-serif !important;
+  text-transform: capitalize;
+  font-weight: 400;
+  margin: 0px;
+  line-height: 1.5;
+  color: #131722;
+  letter-spacing: 0.3px;
+}
+a {
+  color: #34a853;
+  text-decoration: none;
+  background-color: transparent;
+}

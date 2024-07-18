@@ -48,3 +48,19 @@ class My extends Pro {
 }
 const MYY = new My('Nj');
 MYY.nw();
+let tx = 'Bhagavath is my name';
+
+// Split the sentence into words
+let words = tx.split(' ');
+console.log(words);
+// Manually reverse the order of words and construct the reversed sentence
+let reversedString = '';
+for (let i = words.length - 1; i >= 0; i--) {
+  console.log(i);
+  reversedString += words[i];
+  if (i !== 0) {
+    reversedString += ' ';
+  }
+}
+
+console.log(reversedString); // Output: "name my is Bhagavath"

@@ -15,7 +15,7 @@ const DangerButton = ({ name }) => {
         marginTop: 'auto',
         paddingLeft: '22px',
         paddingRight: '22px',
-        width: '50px',
+        width: 'auto',
         borderRadius: '50rem',
         color: '#fff',
         '&:hover': {

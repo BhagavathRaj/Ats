@@ -1,0 +1,32 @@
+/* .table-container table {
+    width: 100%;
+    overflow-x: auto;
+    color: #212529;
+    border-collapse: collapse;
+    display: block;
+  }
+  
+  .table-container th {
+    width: 20%;
+    font-weight: 400;
+    color: #707070;
+    border-bottom: 2px solid #dee2e6;
+    border-top: 1px solid #dee2e6;
+  }
+   */
+.kyc tbody tr:nth-child(odd) td {
+  background-color: #f8f9fa;
+}
+
+.kyc ul li a {
+  color: #374948;
+  font-size: 14px;
+}
+.kyc tbody td:first-child {
+  vertical-align: top;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.kyc tbody ul li {
+  color: #777d74 !important;
+}

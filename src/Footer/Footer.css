@@ -76,10 +76,12 @@
   position: relative;
   top: 4px;
 }
-.hover-para p:hover {
-  color: #34a853;
+ul .hover-para p:hover {
+  color: #34a853 !important;
+
   cursor: pointer;
 }
+
 .footer-content-heading {
   position: relative;
   width: 100%;

@@ -21,6 +21,19 @@ import ElementCalculator from './Calculator/ElementCalculator';
 import PremiumCalculator from './Calculator/PremiumCalculator';
 import BrokerageCalculator from './Calculator/BrokerageCalculator';
 import Charges from './Charges/Charges';
+import Contact from './ContactUs/Contact';
+import Createticket from './UiPages/CreateTicket/Createticket';
+import InvestmentPhilosophy from './UiPages/Investment/InvestmentPhilosophy';
+import RegisteredBankDetails from './UiPages/BankDetails/RegisteredBankDetails';
+import Careers from './UiPages/Careers/Careers';
+import Branches from './UiPages/Branches/Branches';
+import MorningReports from './UiPages/Research/MorningReports';
+import InvestorGreivance from './UiPages/InvestorCorner/InvestorGreivance';
+import AccountOpenProcess from './UiPages/InvestorCorner/AccountOpen';
+import FormCenterResource from './UiPages/InvestorCorner/FormCenterResource';
+import KycChecklist from './UiPages/InvestorCorner/KycChecklist';
+import AtsPolicy from './UiPages/InvestorCorner/AtsPolicy';
+import FileComplaint from './UiPages/InvestorCorner/FileComplaint';
 function App() {
   return (
     <>
@@ -55,6 +68,31 @@ function App() {
           element={<BrokerageCalculator />}
         />
         <Route path="/charges/*" element={<Charges />} />
+        <Route path="/contactus/*" element={<Contact />} />
+        <Route path="/createTicket/*" element={<Createticket />} />
+        <Route
+          path="/investment-philosophy/*"
+          element={<InvestmentPhilosophy />}
+        />
+        <Route
+          path="/bank-account-details/*"
+          element={<RegisteredBankDetails />}
+        />
+        <Route path="/careers/*" element={<Careers />} />
+        <Route path="/branches/*" element={<Branches />} />
+        <Route path="/share-market-news/" element={<MorningReports />} />
+        <Route path="/investment-grievance/*" element={<InvestorGreivance />} />
+        <Route
+          path="/account-opening-process/*"
+          element={<AccountOpenProcess />}
+        />
+        <Route
+          path="/form-center-resources/*"
+          element={<FormCenterResource />}
+        />
+        <Route path="/kyc-checklist/*" element={<KycChecklist />} />
+        <Route path="/ats-policy/*" element={<AtsPolicy />} />
+        <Route path="/how-to-file-complaint/*" element={<FileComplaint />} />
       </Routes>
     </>
   );
