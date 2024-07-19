@@ -34,6 +34,7 @@ import FormCenterResource from './UiPages/InvestorCorner/FormCenterResource';
 import KycChecklist from './UiPages/InvestorCorner/KycChecklist';
 import AtsPolicy from './UiPages/InvestorCorner/AtsPolicy';
 import FileComplaint from './UiPages/InvestorCorner/FileComplaint';
+import MarketCalender from './UiPages/Markets/MarketCalender';
 function App() {
   return (
     <>
@@ -93,6 +94,7 @@ function App() {
         <Route path="/kyc-checklist/*" element={<KycChecklist />} />
         <Route path="/ats-policy/*" element={<AtsPolicy />} />
         <Route path="/how-to-file-complaint/*" element={<FileComplaint />} />
+        <Route path="/holiday-calendar/*" element={<MarketCalender />} />
       </Routes>
     </>
   );

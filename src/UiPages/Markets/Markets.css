@@ -1,0 +1,129 @@
+.market-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+.table-market {
+  width: 100%;
+  margin-bottom: 16px;
+  color: #212529;
+}
+.table-market5 {
+  width: 100%;
+  margin-bottom: 16px;
+  color: #212529;
+}
+.table-market th {
+  padding: 7px;
+}
+.table-market th {
+  padding: 7px;
+}
+.table-market5 thead th {
+  vertical-align: bottom;
+}
+.table-market thead th {
+  vertical-align: bottom;
+}
+.table-market tbody tr td:first-child {
+  text-align: left;
+  padding: 7px;
+  width: 33.33%;
+  border-bottom: 1px solid #3c404338;
+}
+.table-market tbody tr td:nth-child(2) {
+  text-align: center;
+  padding: 7px;
+  width: 33.33%;
+  border-bottom: 1px solid #3c404338;
+}
+.table-market tbody tr td:nth-child(3) {
+  text-align: end;
+  padding: 7px;
+  width: 33.33%;
+  border-bottom: 1px solid #3c404338;
+}
+.table-market thead tr th:first-child {
+  text-align: left;
+  padding: 7px;
+  width: 33.33%;
+  border-bottom: 1px solid #3c404338;
+}
+.table-market thead tr th:nth-child(2) {
+  text-align: center;
+  padding: 7px;
+  width: 33.33%;
+  border-bottom: 1px solid #3c404338;
+}
+.table-market thead tr th:nth-child(3) {
+  text-align: end;
+  width: 33.33%;
+  padding: 7px;
+  border-bottom: 1px solid #3c404338;
+}
+.table-market5 tbody tr td:first-child {
+  text-align: left;
+  padding: 7px;
+  width: 20%;
+  border-bottom: 1px solid #3c404338;
+}
+.table-market5 tbody tr td:nth-child(2) {
+  text-align: left;
+  padding: 7px;
+  width: 20%;
+  border-bottom: 1px solid #3c404338;
+}
+.table-market5 tbody tr td:nth-child(3) {
+  text-align: center;
+  padding: 7px;
+  width: 20%;
+  border-bottom: 1px solid #3c404338;
+}
+.table-market5 tbody tr td:nth-child(4) {
+  text-align: right;
+  padding: 7px;
+  width: 20%;
+  border-bottom: 1px solid #3c404338;
+}
+.table-market5 tbody tr td:nth-child(5) {
+  text-align: right;
+  padding: 7px;
+  width: 20%;
+  border-bottom: 1px solid #3c404338;
+}
+.table-market5 thead tr th:first-child {
+  text-align: left;
+  padding: 7px;
+  width: 20%;
+  border-bottom: 1px solid #3c404338;
+}
+.table-market5 thead tr th:nth-child(2) {
+  text-align: left;
+  padding: 7px;
+  width: 20%;
+  border-bottom: 1px solid #3c404338;
+}
+.table-market5 thead tr th:nth-child(3) {
+  text-align: center;
+  width: 20%;
+  padding: 7px;
+  border-bottom: 1px solid #3c404338;
+}
+.table-market5 thead tr th:nth-child(4) {
+  text-align: right;
+  width: 20%;
+  padding: 7px;
+  border-bottom: 1px solid #3c404338;
+}
+
+.table-market5 thead tr th:nth-child(5) {
+  text-align: right;
+  width: 20%;
+  padding: 7px;
+  border-bottom: 1px solid #3c404338;
+}
+@media (max-width: 400px) {
+  .custom-grid-item {
+    min-width: 300px !important;
+  }
+}

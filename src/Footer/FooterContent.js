@@ -282,31 +282,76 @@ const FooterContent = () => {
                   <li>
                     <h4 className="footer-title">Markets</h4>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => {
+                      window.open('https://nseindia.com/');
+                    }}
+                  >
                     <p>NSE</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => {
+                      window.open('http://www.bseindia.com/');
+                    }}
+                  >
                     <p>BSE</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => {
+                      window.open('https://www.mcxindia.com/');
+                    }}
+                  >
                     <p>MCX</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => {
+                      window.open('http://www.sebi.gov.in/');
+                    }}
+                  >
                     <p>SEBI</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => {
+                      window.open('https://scores.sebi.gov.in/');
+                    }}
+                  >
                     <p>SCORES</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => {
+                      window.open('https://www.cdslindia.com/');
+                    }}
+                  >
                     <p>CDSL</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/holiday-calendar/')}
+                  >
                     <p>Market Holidays</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => {
+                      window.open(
+                        'https://evoting.cdslindia.com/Evoting/EvotingLogin'
+                      );
+                    }}
+                  >
                     <p>CDSL e-Voting</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => {
+                      window.open('https://smartodr.in/login');
+                    }}
+                  >
                     <p>ODR Portal</p>
                   </li>
                 </ul>
@@ -320,20 +365,35 @@ const FooterContent = () => {
                   <li>
                     <h4 className="footer-title">Head Office</h4>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => {
+                      window.open('https://goo.gl/maps/7A41Dv4QhSaTWa5u6');
+                    }}
+                  >
                     <p>
                       ATS Share Brokers Pvt Ltd, 2gethr, 1st Floor, Tower B,
                       Mantri Commercio, Kariyamana Agraharam, Bellandur
                       Bengaluru- 560 103.
                     </p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => {
+                      window.open('tel:+917667273344');
+                    }}
+                  >
                     <p>
                       <CallIcon sx={{ width: '15px', height: '15px' }} /> +91
                       766 727 3344
                     </p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => {
+                      window.open('mailto:support@adityatrading.com');
+                    }}
+                  >
                     <p>
                       <EmailIcon sx={{ width: '15px', height: '15px' }} />{' '}
                       support@adityatrading.com

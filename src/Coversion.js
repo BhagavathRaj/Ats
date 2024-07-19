@@ -64,3 +64,6 @@ for (let i = words.length - 1; i >= 0; i--) {
 }
 
 console.log(reversedString); // Output: "name my is Bhagavath"
+
+let my = 'Raj';
+console.log(my.charAt(Math.floor(Math.random() * my.length)));
