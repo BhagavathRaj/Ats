@@ -1,0 +1,118 @@
+/* Hide scrollbars in webkit browsers */
+.charts::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbars in Firefox */
+.charts {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbars in Internet Explorer, Edge */
+.charts {
+  -ms-overflow-style: none;
+}
+.img2 {
+  border-radius: 0.3rem !important;
+  max-height: 120px !important;
+  min-height: 120px;
+  max-width: 210px;
+  min-width: 210px;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.greenText {
+  color: #34a853 !important;
+  text-align: start;
+}
+
+.greenTextCenter {
+  color: #34a853 !important;
+  text-align: center;
+}
+
+.greenTextRight {
+  color: #34a853 !important;
+  text-align: right;
+}
+
+.redTextcenter {
+  color: #e64141 !important;
+  text-align: center;
+}
+.redTextright {
+  color: #e64141 !important;
+  text-align: right;
+}
+.redText {
+  color: #e64141 !important;
+  text-align: left;
+}
+.tbl tbody td {
+  font-weight: 500;
+  color: #3c4043;
+  font-size: 13px;
+}
+.tbl td {
+  padding: 7px;
+}
+.tbl thead th {
+  vertical-align: bottom;
+  border-bottom: 0px solid #dee2e6 !important;
+  border-top: 1px solid #dee2e6;
+}
+.tbl {
+  width: 100%;
+}
+
+.even td {
+  border-bottom: 1px solid #dee2e6;
+  border-top: 0px solid #dee2e6;
+}
+.smalltable {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+.smalltable tbody td {
+  font-weight: 500;
+  color: #3c4043;
+  font-size: 13px;
+}
+.smalltable td {
+  padding: 7px;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+.smalltable tbody tr:nth-child(odd) {
+  background-color: #f0f0f0; /* Example background color for odd td */
+}
+.hh4 {
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu,
+    sans-serif !important;
+  text-transform: capitalize;
+  font-weight: 400;
+  margin: 0px;
+  line-height: 1.5;
+  color: #131722;
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 700px) {
+  .tbl {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    display: block;
+    overflow-x: auto;
+  }
+  .smalltable {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    display: block;
+    overflow-x: auto;
+  }
+}

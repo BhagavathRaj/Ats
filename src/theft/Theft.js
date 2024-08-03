@@ -1,16 +1,13 @@
 import React, { useEffect } from 'react';
-import LandingPage from '../../LandingPage';
+import LandingPage from '../LandingPage';
 
-import FooterContent from '../../Footer/FooterContent';
+import FooterContent from '../Footer/FooterContent';
 import { useLocation } from 'react-router-dom';
 
-import { dark } from '@mui/material/styles/createPalette';
-import GreenButton from '../../Buttons/GreenButton';
 import { Box, Grid, Typography, useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import DangerButton from '../../Buttons/Danger';
 
-const InvestmentPhilosophy = () => {
+const Theft = () => {
   const location = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -43,34 +40,25 @@ const InvestmentPhilosophy = () => {
         >
           <Grid container direction="column" spacing={2}>
             <Grid container item spacing={2}>
-              <Grid item xs={isMobile ? 12 : 6}>
+              <Grid item xs={isMobile ? 12 : 8}>
                 {/* <Box width="100%" bgcolor="lightblue" height="100px"></Box> */}
                 <Box>
-                  <h5> ATS Investment Philosophy </h5>
+                  <h5> Identity Theft </h5>
+                  <p>Dear Patrons,</p>
                   <p>
-                    <b>Clients Have Earned Money The Hard Way</b>
-                  </p>
-                  <p>
-                    We believe our clients have worked very hard to earn money
-                    and with that in mind we also work equally hard in making
-                    sure our client’s wealth is preserved in the best way
-                    possible. We spend considerable amount of time making sure
-                    that our client’s wealth is protected in the best way
-                    possible.
-                  </p>
-                  <p style={{ textAlign: 'center' }}>
-                    “Rule No. 1 – Not to lose client’s hard earned money
-                  </p>
-                  <p style={{ textAlign: 'center' }}>
-                    Rule No.2 -- Not to forget the Rule number 1”
+                    Financial industry is prone to several Frauds and Scams,
+                    here are some of the tips on how to protect yourself. The
+                    best way to keep yourself protected against fraud is to stay
+                    vigilant. A fraud could leave you without any funds in a
+                    matter of minutes!
                   </p>
                 </Box>
               </Grid>
-              <Grid item xs={isMobile ? 12 : 6}>
+              <Grid item xs={isMobile ? 12 : 4}>
                 <Box>
                   <img
                     style={{ width: '100%', height: 'auto' }}
-                    src="https://adityatrading.in/static/images/INVESTMENT-PHILOSOPHY.svg"
+                    src="https://adityatrading.in/static/images/identity-theft.svg"
                     alt="people"
                   />
                 </Box>
@@ -79,19 +67,33 @@ const InvestmentPhilosophy = () => {
             <Grid item xs={12}>
               <Box>
                 <p>
-                  <b>Alpha Generation</b>
+                  <b>Identity Theft</b>
                 </p>
                 <p>
-                  We have strong belief that for generating alpha returns over a
-                  long period of time, we need to have a mix of both Equity and
-                  Derivatives to beat index returns during all facets of market.
-                  As most of our investments are in Index Stocks, replicating
-                  market return becomes easier. With randomness in market one
-                  could generate Alpha by investing in few stocks in short run,
-                  for long term outperformance we need to have a mix of both
-                  Quality Equity Investment clubbed with exposure to
-                  derivatives.
+                  Theft occurs when someone wrongfully uses your personal
+                  information to obtain services in your name. Protect yourself
+                  against ID theft
                 </p>
+                <ul style={{ marginBottom: '7px', marginLeft: '25px' }}>
+                  <li>
+                    <p>
+                      Destroy any piece of paper that contains your login and
+                      password
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Never share your personal information with a stranger or
+                      any third party
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Update your contact numbers, address or email ID with the
+                      latest ones.
+                    </p>
+                  </li>
+                </ul>
                 <p>
                   <b>Invest Only Profitable Stocks</b>
                 </p>
@@ -164,19 +166,6 @@ const InvestmentPhilosophy = () => {
                   where our schemes do well.
                 </p>
                 <p>
-                  <b>
-                    Managing Others Money Requires More Of A Character Than
-                    Brain
-                  </b>
-                </p>
-                <p>
-                  “It is remarkable how much long-term advantage; people like us
-                  have gotten by trying to be consistently not stupid, instead
-                  of trying to be very intelligent.” - Munger We strongly
-                  believe that for anyone to do well in market, a solid strong
-                  framework of mind is required than the knowledge alone.
-                </p>
-                <p>
                   <b>Only Long Term And No Churns</b>
                 </p>
                 <p>
@@ -234,4 +223,4 @@ const InvestmentPhilosophy = () => {
   );
 };
 
-export default InvestmentPhilosophy;
+export default Theft;

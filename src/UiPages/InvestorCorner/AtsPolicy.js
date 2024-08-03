@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import LandingPage from '../../LandingPage';
 
 import FooterContent from '../../Footer/FooterContent';
@@ -12,6 +12,9 @@ import DangerButton from '../../Buttons/Danger';
 
 const AtsPolicy = () => {
   const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 

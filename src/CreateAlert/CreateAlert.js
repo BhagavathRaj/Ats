@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import LandingPage from '../LandingPage';
 import { Button, Grid } from '@mui/material';
 import FooterContent from '../Footer/FooterContent';
@@ -7,7 +7,9 @@ import './CreateAlert.css';
 import { dark } from '@mui/material/styles/createPalette';
 const CreateAlert = () => {
   const location = useLocation();
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <LandingPage />

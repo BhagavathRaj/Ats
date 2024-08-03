@@ -1,0 +1,77 @@
+.inputopinion {
+  margin-bottom: 16px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+label {
+  color: #374948;
+}
+.formopinion {
+  height: 30px;
+  line-height: 30px;
+  background: #ffffff;
+  border: 1px solid #a7a4a4;
+  font-size: 11px;
+  color: #777d74;
+  border-radius: 5px;
+}
+.formopinion:focus {
+  outline: none;
+}
+.table-intra {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+.tabint {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  border-collapse: collapse;
+}
+.tabint thead th {
+  font-weight: 400;
+  color: #707070;
+  vertical-align: bottom;
+}
+.tabint thead {
+  padding: 7px;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+.tabint tbody td {
+  font-weight: 500;
+  color: #3c4043;
+  font-size: 13px;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+.btns {
+  padding: 0px 12px;
+  background-color: #ffdfe2;
+  color: #dc3545;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.gr {
+  color: #34a853 !important;
+}
+.bl {
+  color: #0084ff !important;
+}
+.red {
+  padding: 0px 12px;
+  color: #34a853;
+  background-color: #d1ffdd;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.rd {
+  color: #dc3545;
+}
+.grn {
+  color: #34a853 !important;
+}

@@ -1,0 +1,56 @@
+.styled-table tbody tr td {
+  font-weight: 500;
+  color: #3c4045;
+  font-size: 15px;
+}
+.styled-table tbody tr td p {
+  color: black !important ;
+}
+.styled-table {
+  overflow-x: auto;
+}
+.table-responsive {
+  display: block;
+  min-width: 200px;
+  overflow-x: auto;
+  height: auto;
+  overflow-y: hidden;
+  margin-bottom: 30px;
+}
+.tables {
+  width: 100%;
+  color: #212529;
+  height: fit-content;
+}
+#blank {
+  border: 1px solid #b7b1b1;
+  line-height: 1.2;
+  padding: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+.bankTable {
+  border: 1px solid #b7b1b1;
+  line-height: 1.2;
+  width: 100%;
+  color: #fff;
+  padding: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+.bankTable td {
+  border: 1px solid #b7b1b1;
+  padding: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+.bankTable tbody td {
+  color: #3c4043;
+  font-weight: 500;
+}
+@media (max-width: 500px) {
+  .styled-table {
+    width: 70%;
+    /* Adjust width as needed */
+  }
+}

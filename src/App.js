@@ -35,6 +35,18 @@ import KycChecklist from './UiPages/InvestorCorner/KycChecklist';
 import AtsPolicy from './UiPages/InvestorCorner/AtsPolicy';
 import FileComplaint from './UiPages/InvestorCorner/FileComplaint';
 import MarketCalender from './UiPages/Markets/MarketCalender';
+import Posts from './UiPages/OtherReports/Posts';
+import PostDetails from './UiPages/OtherReports/PostDetails';
+import Circular from './UiPages/Circular/Circular';
+import Mutualfunds from './UiPages/OtherReports/Mutualfunds';
+import Analystopinion from './UiPages/OtherReports/Analystopinion';
+import Dps from './UiPages/Investorcharter/Dps';
+import Stockbroker from './UiPages/Investorcharter/Stockbroker';
+import DpsMonthly from './UiPages/MonthlyDisclosur/DpsMonthly';
+import StockMonthly from './UiPages/MonthlyDisclosur/StockMonthly';
+import CompanyPages from './Company/CompanyPages';
+import Theft from './theft/Theft';
+
 function App() {
   return (
     <>
@@ -95,6 +107,23 @@ function App() {
         <Route path="/ats-policy/*" element={<AtsPolicy />} />
         <Route path="/how-to-file-complaint/*" element={<FileComplaint />} />
         <Route path="/holiday-calendar/*" element={<MarketCalender />} />
+        <Route path="/posts/*" element={<Posts />} />
+        <Route path="/posts/detail" element={<PostDetails />} />
+        <Route path="/circulars/" element={<Circular />} />
+        <Route path="/mutual-funds/*" element={<Mutualfunds />} />
+        <Route path="/analyst_opinions/" element={<Analystopinion />} />
+        <Route path="/investor-charter-dp/" element={<Dps />} />
+        <Route
+          path="/investor-charter-stock-broker/"
+          element={<Stockbroker />}
+        />
+        <Route path="/monthly-disclosure-dp/" element={<DpsMonthly />} />
+        <Route
+          path="/monthly-disclosure-stockbroker/"
+          element={<StockMonthly />}
+        />
+        <Route path="/companypage/colpal/" element={<CompanyPages />} />
+        <Route path="/theft-identity/" element={<Theft />} />
       </Routes>
     </>
   );

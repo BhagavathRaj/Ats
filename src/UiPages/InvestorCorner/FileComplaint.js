@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import LandingPage from '../../LandingPage';
 
@@ -16,6 +16,9 @@ import './kyc.css';
 
 const FileComplaint = () => {
   const theme = useTheme();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const tds = {
     border: '1px solid #b7b1b1',

@@ -7,9 +7,14 @@ import { Box } from '@mui/system';
 import { Grid, Typography, useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import './Component.css';
+import { useNavigate } from 'react-router';
 const Component2 = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+  const navigate = useNavigate();
+  const handleNavigation = (path) => {
+    navigate(path);
+  };
   return (
     <div
       className={classNames('politicalnewscontainer', 'scrollable-container')}
@@ -101,6 +106,7 @@ const Component2 = () => {
 
             <div
               className="butn"
+              onClick={() => handleNavigation('/companypage/colpal/')}
               // style={{
               //   display: 'flex',
               //   justifyContent: 'center',

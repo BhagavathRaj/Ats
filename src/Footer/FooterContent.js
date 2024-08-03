@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import EmailIcon from '@mui/icons-material/Email';
 import PublicIcon from '@mui/icons-material/Public';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -12,8 +12,12 @@ import { useNavigate } from 'react-router';
 
 const FooterContent = () => {
   const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const handleNavigation = (path) => {
     navigate(path);
+    window.scrollTo(0, 0);
   };
   return (
     <div
@@ -97,19 +101,35 @@ const FooterContent = () => {
                   <li>
                     <h4 className="footer-title">Investor Charter</h4>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/investor-charter-dp/')}
+                  >
                     <p>- DPs</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() =>
+                      handleNavigation('/investor-charter-stock-broker/')
+                    }
+                  >
                     <p>- Stock Broker</p>
                   </li>
                   <li>
                     <h4 className="footer-title">Monthly Disclosure</h4>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/monthly-disclosure-dp/')}
+                  >
                     <p>- DPs</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() =>
+                      handleNavigation('/monthly-disclosure-stockbroker/')
+                    }
+                  >
                     <p>- Stock Broker</p>
                   </li>
                 </ul>
@@ -168,19 +188,31 @@ const FooterContent = () => {
                   <li>
                     <h4 className="footer-title">Other Reports</h4>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/posts/')}
+                  >
                     <p>Posts</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/mutual-funds/')}
+                  >
                     <p>Mutual Funds</p>
                   </li>
-                  <li>
-                    <h4 className="footer-title">FAQ’s</h4>
-                  </li>
                   <li className="hover-para">
+                    <p>FAQ’s</p>
+                  </li>
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/circulars/')}
+                  >
                     <p>Circulars</p>
                   </li>
-                  <li className="hover-para">
+                  <li
+                    className="hover-para"
+                    onClick={() => handleNavigation('/analyst_opinions/')}
+                  >
                     <p>Analyst Opinions</p>
                   </li>
                 </ul>
